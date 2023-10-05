@@ -1,1 +1,18 @@
 
+
+CoCooN Variant: I
+Original graph size (G): 414872
+Compressed graph size (G_c): 196800
+Compression Ratio: 0.474363
+
+Shortest path query results on 100000 random node pairs:
+----------------------------------------------------
+Average error in shortest path: 0.147192
+Minimum error in shortest path: 0
+Maximum error in shortest path: 6
+Standard deviation of error in shortest path: 0.301521
+Shortest path query time on G (in seconds): 0.0020145
+Shortest path query time on G_c (in seconds): 0.0096335
+Decompression time of G_c (in seconds): 0.04
+Shortest path query time on globally decompressed G_c (in seconds): 0.0016715
+
