@@ -15,8 +15,8 @@ The supernode mapping of the compressed graph is saved to the text file named 'S
 `./exec_CoCooN.sh input_file var δ `
 
 * input_file: the input graph file in .txt format.
-* var: ls will be -1 for CCN-I, 0 for CCN-E, and 1 for CCN-U.
-* δ: threshold parameter for controlling the loss.
+* var: I for CCN-I, E for CCN-E, and U for CCN-U.
+* δ: threshold parameter for controlling the loss, a value between 0 and 1.
 * Output files will be stored in <em>Compressed</em> folder.
 * Output results will be stored in <em>Compressed_Results</em> folder.
 
