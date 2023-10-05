@@ -1,1 +1,16 @@
 
+
+CoCooN Variant: I
+Original graph size (G): 414872
+Compressed graph size (G_c): 196800
+Compression Ratio: 0.474363
+
+Reachability query results on 100000 random node pairs:
+----------------------------------------------------
+Reachability Accuracy: 0.942396
+No. of paths not existing in both G & G_c: 9086
+No. of paths not existing in G: 0
+No. of paths not existing in G_c: 5237
+Reachability query time on G (in seconds): 0.0020053
+Reachability query time on G_c (in seconds): 0.0098913
+
