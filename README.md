@@ -17,7 +17,8 @@ The supernode mapping of the compressed graph is saved to the text file named 'S
 * input_file: the input graph file in .txt format.
 * var: ls will be -1 for CCN-I, 0 for CCN-E, and 1 for CCN-U.
 * δ: threshold parameter for controlling the loss.
-* Output file will be stored in <em>Results</em> folder.
+* Output files will be stored in <em>Compressed</em> folder.
+* Output results will be stored in <em>Compressed_Results</em> folder.
 
 Example:
 
