@@ -97,7 +97,9 @@ To run the algorithm:
 
 Output saved at SP_Results/AP.txt:
 
-<em>Original graph size (G): 414872<br>
+<em>
+CoCooN Variant: I<br>
+Original graph size (G): 414872<br>
 Compressed graph size (G_c): 196800<br>
 Compression Ratio: 0.474363<br>
 
@@ -107,10 +109,11 @@ Average error in shortest path: 0.147192<br>
 Minimum error in shortest path: 0<br>
 Maximum error in shortest path: 6<br>
 Standard deviation of error in shortest path: 0.301521<br>
-Shortest path query time on G (in seconds): 0.0021431<br>
-Shortest path query time on G_c (in seconds): 0.0103938<br>
+Shortest path query time on G (in seconds): 0.0020145<br>
+Shortest path query time on G_c (in seconds): 0.0096335<br>
 Decompression time of G_c (in seconds): 0.04<br>
-Shortest path query time on globally decompressed G_c (in seconds): 0.0018237</em><br>
+Shortest path query time on globally decompressed G_c (in seconds): 0.0016715
+</em><br>
 </li>
 
 <li><strong>Running Reachability Query:</strong>
@@ -129,18 +132,19 @@ To run the algorithm:
 
 Output saved at RQ_Results/AP.txt:
 
-<em>Original graph size (G): 414872<br>
+<em>CoCooN Variant: I<br>
+Original graph size (G): 414872<br>
 Compressed graph size (G_c): 196800<br>
 Compression Ratio: 0.474363<br>
 
 Reachability query results on 100000 random node pairs:<br>
 ----------------------------------------------------<br>
-Reachability Accuracy: 0<br>
+Reachability Accuracy: 0.942396<br>
 No. of paths not existing in both G & G_c: 9086<br>
 No. of paths not existing in G: 0<br>
 No. of paths not existing in G_c: 5237<br>
-Reachability query time on G (in seconds): 0.0021387<br>
-Reachability query time on G_c (in seconds): 0.0106238<br>
+Reachability query time on G (in seconds): 0.0020053<br>
+Reachability query time on G_c (in seconds): 0.0098913
 </em><br>
 </li>
 
