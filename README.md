@@ -36,22 +36,88 @@
 Example:
 
 To run the algorithm:
+
 `./exec_CoCooN_NQ.sh AP EL_I_0.5_AP.txt SN_I_0.5_AP.txt I`
+
 Output saved at NQ_Results/AP.txt:
-<em>Original graph size: 414872
-Compressed graph size: 196800
-Compression Ratio: 0.474363
 
-Neighbourhood Query:
----------------------
-No. of extra edges: 0
-No. of missing edges: 99262
-Average loss per node: 0.251521
-Minimum loss per node: 0
-Maximum loss per node: 0.5
-Standard deviation of loss per node: 0.176506
-Neighbourhood query time in G (in seconds): 1.06542e-06
-Neighbourhood query time in G_c (in seconds): 3.19625e-06</em>
+<em>Original graph size: 414872<br>
+Compressed graph size: 196800<br>
+Compression Ratio: 0.474363<br>
 
+Neighbourhood Query:<br>
+---------------------<br>
+No. of extra edges: 0<br>
+No. of missing edges: 99262<br>
+Average loss per node: 0.251521<br>
+Minimum loss per node: 0<br>
+Maximum loss per node: 0.5<br>
+Standard deviation of loss per node: 0.176506<br>
+Neighbourhood query time in G (in seconds): 1.06542e-06<br>
+Neighbourhood query time in G_c (in seconds): 3.19625e-06</em><br>
 </li>
+
+<li><strong>Running Shortest Path Query:</strong>
+
+`./exec_CoCooN_SP.sh dataset_name edge_list.txt supernode_list.txt var`
+
+* input_file: the input graph file in .txt format.
+* var: I for CCN-I, E for CCN-E, and U for CCN-U.
+* Results will be will be stored in <em>SP_Results</em> folder as text file.
+
+Example:
+
+To run the algorithm:
+
+`./exec_CoCooN_SP.sh AP EL_I_0.5_AP.txt SN_I_0.5_AP.txt I`
+
+Output saved at SP_Results/AP.txt:
+
+<em>Original graph size (G): 414872<br>
+Compressed graph size (G_c): 196800<br>
+Compression Ratio: 0.474363<br>
+
+Shortest path query results on 100000 random node pairs:<br>
+----------------------------------------------------<br>
+Average error in shortest path: 0.147192<br>
+Minimum error in shortest path: 0<br>
+Maximum error in shortest path: 6<br>
+Standard deviation of error in shortest path: 0.301521<br>
+Shortest path query time on G (in seconds): 0.0021431<br>
+Shortest path query time on G_c (in seconds): 0.0103938<br>
+Decompression time of G_c (in seconds): 0.04<br>
+Shortest path query time on globally decompressed G_c (in seconds): 0.0018237</em><br>
+</li>
+
+<li><strong>Running Reachability Query:</strong>
+
+`./exec_CoCooN_RQ.sh dataset_name edge_list.txt supernode_list.txt var`
+
+* input_file: the input graph file in .txt format.
+* var: I for CCN-I, E for CCN-E, and U for CCN-U.
+* Results will be will be stored in <em>RQ_Results</em> folder as text file.
+
+Example:
+
+To run the algorithm:
+
+`./exec_CoCooN_RQ.sh AP EL_I_0.5_AP.txt SN_I_0.5_AP.txt I`
+
+Output saved at RQ_Results/AP.txt:
+
+<em>Original graph size (G): 414872<br>
+Compressed graph size (G_c): 196800<br>
+Compression Ratio: 0.474363<br>
+
+Reachability query results on 100000 random node pairs:<br>
+----------------------------------------------------<br>
+Reachability Accuracy: 0<br>
+No. of paths not existing in both G & G_c: 9086<br>
+No. of paths not existing in G: 0<br>
+No. of paths not existing in G_c: 5237<br>
+Reachability query time on G (in seconds): 0.0021387<br>
+Reachability query time on G_c (in seconds): 0.0106238<br>
+</em><br>
+</li>
+
 </ol>
