@@ -41,7 +41,9 @@ To run the algorithm:
 
 Output saved at NQ_Results/AP.txt:
 
-<em>Original graph size: 414872<br>
+<em>
+CoCooN Variant: I<br>
+Original graph size: 414872<br>
 Compressed graph size: 196800<br>
 Compression Ratio: 0.474363<br>
 
@@ -53,8 +55,9 @@ Average loss per node: 0.251521<br>
 Minimum loss per node: 0<br>
 Maximum loss per node: 0.5<br>
 Standard deviation of loss per node: 0.176506<br>
-Neighbourhood query time in G (in seconds): 1.06542e-06<br>
-Neighbourhood query time in G_c (in seconds): 3.19625e-06</em><br>
+Neighbourhood query time in G (in seconds): 0<br>
+Neighbourhood query time in G_c (in seconds): 4.26167e-06
+</em><br>
 </li>
 
 <li><strong>Running Shortest Path Query:</strong>
