@@ -1,1 +1,18 @@
 
+
+CoCooN Variant: I
+Original graph size: 414872
+Compressed graph size: 196800
+Compression Ratio: 0.474363
+
+Neighbourhood Query:
+---------------------
+No. of extra edges: 0
+No. of missing edges: 99262
+Average loss per node: 0.251521
+Minimum loss per node: 0
+Maximum loss per node: 0.5
+Standard deviation of loss per node: 0.176506
+Neighbourhood query time in G (in seconds): 0
+Neighbourhood query time in G_c (in seconds): 4.26167e-06
+
