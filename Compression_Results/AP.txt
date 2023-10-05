@@ -1,1 +1,14 @@
+Dataset: AP.txt
+CoCooN Variant: I
+Threshold: 0.5
+Nodes in input graph (G): 18772
+Edges in input graph (G): 198050
+Nodes in compressed graph (G_c): 24351
+Edges in compressed graph (G_c): 86225
+Size of original graph (G): 414872
+Size of compressed graph (G_c): 196800
+Compression Ratio: 0.474363
+Compression time (in seconds): 131.31
+Heap construction time (in seconds): 24.56
+Iteration time (in seconds): 106.74
 
