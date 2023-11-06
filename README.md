@@ -12,7 +12,7 @@ The supernode mapping of the compressed graph is saved to the text file named 'S
 
 <li><strong>Running the algorithm:</strong>
 
-`./exec_CoCooN.sh input_file var δ `
+`./exec_CoCooN_Compression.sh input_file var δ `
 
 * input_file: the input graph file in .txt format.
 * var: I for CCN-I, E for CCN-E, and U for CCN-U.
@@ -24,7 +24,7 @@ Example:
 
 To run the algorithm:
 
-`./exec_CoCooN_NQ.sh AP.txt I 0.5`
+`./exec_CoCooN_Compression.sh AP.txt I 0.5`
 
 Output saved at Compression_Results/AP.txt:
 
