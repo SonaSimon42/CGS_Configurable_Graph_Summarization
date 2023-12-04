@@ -336,8 +336,8 @@ void OutputController::neighbourhood_loss() {
   cout<<"\nCompression Ratio: "<<cr;
   cout<<"\n\nNeighbourhood Query:";
   cout<<"\n---------------------";
-  cout<<"\nNo. of extra edges: "<<fp;
-  cout<<"\nNo. of missing edges: "<<fn;
+  cout<<"\nNo. of extra edges: "<<fp/2;
+  cout<<"\nNo. of missing edges: "<<fn/2;
 }
 
 void OutputController::per_node_loss() {

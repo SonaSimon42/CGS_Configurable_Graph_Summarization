@@ -8,7 +8,7 @@ Compression Ratio: 0.474363
 Neighbourhood Query:
 ---------------------
 No. of extra edges: 0
-No. of missing edges: 99262
+No. of missing edges: 49631
 Average loss per node: 0.251521
 Minimum loss per node: 0
 Maximum loss per node: 0.5
