@@ -48,9 +48,11 @@ Iteration time (in seconds): 106.74</em><br>
 
 <li><strong>Running Neighbourhood Query:</strong>
 
-`./exec_CGS_NQ.sh dataset_name edge_list.txt supernode_list.txt var`
+`./exec_CGS_NQ.sh input_graph.txt edge_list.txt supernode_list.txt var`
 
-* input_file: the input graph file in .txt format.
+* input_graph.txt: the input graph file in .txt format.
+* edge_list.txt: compressed graph edge list in .txt format.
+* supernode_list.txt: compressed graph supernode list in .txt format.
 * var: I for CGS-I, E for CGS-E, and U for CGS-U.
 * Results will be will be stored in <em>NQ_Results</em> folder as text file.
 
@@ -58,7 +60,7 @@ Example:
 
 To run the algorithm:
 
-`./exec_CGS_NQ.sh AP EL_I_0.5_AP.txt SN_I_0.5_AP.txt I`
+`./exec_CGS_NQ.sh AP.txt EL_I_0.5_AP.txt SN_I_0.5_AP.txt I`
 
 Output saved at NQ_Results/AP.txt:
 
@@ -83,9 +85,11 @@ Neighbourhood query time in G_c (in seconds): 4.26167e-06
 
 <li><strong>Running Shortest Path Query:</strong>
 
-`./exec_CGS_SP.sh dataset_name edge_list.txt supernode_list.txt var`
+`./exec_CGS_SP.sh input_graph.txt edge_list.txt supernode_list.txt var`
 
-* input_file: the input graph file in .txt format.
+* input_graph.txt: the input graph file in .txt format.
+* edge_list.txt: compressed graph edge list in .txt format.
+* supernode_list.txt: compressed graph supernode list in .txt format.
 * var: I for CGS-I, E for CGS-E, and U for CGS-U.
 * Results will be will be stored in <em>SP_Results</em> folder as text file.
 
@@ -93,7 +97,7 @@ Example:
 
 To run the algorithm:
 
-`./exec_CGS_SP.sh AP EL_I_0.5_AP.txt SN_I_0.5_AP.txt I`
+`./exec_CGS_SP.sh AP.txt EL_I_0.5_AP.txt SN_I_0.5_AP.txt I`
 
 Output saved at SP_Results/AP.txt:
 
@@ -118,9 +122,11 @@ Shortest path query time on globally decompressed G_c (in seconds): 0.0016715
 
 <li><strong>Running Reachability Query:</strong>
 
-`./exec_CGS_RQ.sh dataset_name edge_list.txt supernode_list.txt var`
+`./exec_CGS_RQ.sh input_graph.txt edge_list.txt supernode_list.txt var`
 
-* input_file: the input graph file in .txt format.
+* input_graph.txt: the input graph file in .txt format.
+* edge_list.txt: compressed graph edge list in .txt format.
+* supernode_list.txt: compressed graph supernode list in .txt format.
 * var: I for CGS-I, E for CGS-E, and U for CGS-U.
 * Results will be will be stored in <em>RQ_Results</em> folder as text file.
 
@@ -128,7 +134,7 @@ Example:
 
 To run the algorithm:
 
-`./exec_CGS_RQ.sh AP EL_I_0.5_AP.txt SN_I_0.5_AP.txt I`
+`./exec_CGS_RQ.sh AP.txt EL_I_0.5_AP.txt SN_I_0.5_AP.txt I`
 
 Output saved at RQ_Results/AP.txt:
 
