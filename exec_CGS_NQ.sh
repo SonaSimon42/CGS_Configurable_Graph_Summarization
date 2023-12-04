@@ -1,6 +1,6 @@
 #!/bin/bash
 rm a.out
-g++ -O3 CoCooN_NQ.cpp -w
+g++ -O3 CGS_NQ.cpp -w
 
 # $1 represents dataset name
 # $2 represents filename of edge list of compressed graph

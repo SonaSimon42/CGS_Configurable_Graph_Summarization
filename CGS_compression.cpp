@@ -977,7 +977,7 @@ int main(int argc, char* argv[]) {
   else if(*algo == 'U')
     fp = 1;
   else
-    cout<<"Invalid CoCooN Algorithm";
+    cout<<"Invalid CGS Algorithm";
   float tol = atof(argv[5]); // tolerance
 
   string EL = "Compressed/EL_"+string(argv[4])+"_"+string(argv[5])+"_"+string(dataset); // compressed graph edge list

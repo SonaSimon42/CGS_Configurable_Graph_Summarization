@@ -1,6 +1,6 @@
 
 
-CoCooN Variant: I
+CGS Variant: I
 Original graph size: 414872
 Compressed graph size: 196800
 Compression Ratio: 0.474363

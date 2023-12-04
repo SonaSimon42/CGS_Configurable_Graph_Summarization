@@ -1,5 +1,5 @@
 Dataset: AP.txt
-CoCooN Variant: I
+CGS Variant: I
 Threshold: 0.5
 Nodes in input graph (G): 18772
 Edges in input graph (G): 198050
