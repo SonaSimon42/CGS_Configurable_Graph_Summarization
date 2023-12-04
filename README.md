@@ -23,7 +23,7 @@ Example:
 
 To run the algorithm:
 
-`./exec_CoCooN_Compression.sh AP.txt I 0.5`
+`./exec_CGS_Compression.sh AP.txt I 0.5`
 
 Output saved at Compression_Results/AP.txt:
 
@@ -48,7 +48,7 @@ Iteration time (in seconds): 106.74</em><br>
 
 <li><strong>Running Neighbourhood Query:</strong>
 
-`./exec_CoCooN_NQ.sh dataset_name edge_list.txt supernode_list.txt var`
+`./exec_CGS_NQ.sh dataset_name edge_list.txt supernode_list.txt var`
 
 * input_file: the input graph file in .txt format.
 * var: I for CGS-I, E for CGS-E, and U for CGS-U.
@@ -83,7 +83,7 @@ Neighbourhood query time in G_c (in seconds): 4.26167e-06
 
 <li><strong>Running Shortest Path Query:</strong>
 
-`./exec_CoCooN_SP.sh dataset_name edge_list.txt supernode_list.txt var`
+`./exec_CGS_SP.sh dataset_name edge_list.txt supernode_list.txt var`
 
 * input_file: the input graph file in .txt format.
 * var: I for CGS-I, E for CGS-E, and U for CGS-U.
