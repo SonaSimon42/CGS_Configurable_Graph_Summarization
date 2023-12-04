@@ -1,6 +1,5 @@
-# CoCooN: A Graph Compression Framework with Bounded Neighborhood Loss
-
-## Running CoCooN
+# CGS - Configurable Graph Summarization with Bounded Neighborhood Loss and Query Support
+## Running CGS
 <ol>
 <li> <strong>Input file format</strong>:
  The input file is a text file. The first line contains the number of nodes(V) and the number of edges(E) separated by space. Then, the next E lines represent the undirected edges, denoted by two integers separated by space. The nodes must be named from 0 to V-1. Save the graphs to be tested as text files in the <em>Dataset</em> folder.
@@ -12,10 +11,10 @@ The supernode mapping of the compressed graph is saved to the text file named 'S
 
 <li><strong>Running the algorithm:</strong>
 
-`./exec_CoCooN_Compression.sh input_file var δ `
+`./exec_CGS_Compression.sh input_file var δ `
 
 * input_file: the input graph file in .txt format.
-* var: I for CCN-I, E for CCN-E, and U for CCN-U.
+* var: I for CGS-I, E for CGS-E, and U for CGS-U.
 * δ: threshold parameter for controlling the loss, a value between 0 and 1.
 * Output files will be stored in <em>Compressed</em> folder.
 * Output results will be stored in <em>Compressed_Results</em> folder.
@@ -29,7 +28,7 @@ To run the algorithm:
 Output saved at Compression_Results/AP.txt:
 
  <em>Dataset: AP.txt<br>
-CoCooN Variant: I<br>
+CGS Variant: I<br>
 Threshold: 0.5<br>
 Nodes in input graph (G): 18772<br>
 Edges in input graph (G): 198050<br>
@@ -52,19 +51,19 @@ Iteration time (in seconds): 106.74</em><br>
 `./exec_CoCooN_NQ.sh dataset_name edge_list.txt supernode_list.txt var`
 
 * input_file: the input graph file in .txt format.
-* var: I for CCN-I, E for CCN-E, and U for CCN-U.
+* var: I for CGS-I, E for CGS-E, and U for CGS-U.
 * Results will be will be stored in <em>NQ_Results</em> folder as text file.
 
 Example:
 
 To run the algorithm:
 
-`./exec_CoCooN_NQ.sh AP EL_I_0.5_AP.txt SN_I_0.5_AP.txt I`
+`./exec_CGS_NQ.sh AP EL_I_0.5_AP.txt SN_I_0.5_AP.txt I`
 
 Output saved at NQ_Results/AP.txt:
 
 <em>
-CoCooN Variant: I<br>
+CGS Variant: I<br>
 Original graph size: 414872<br>
 Compressed graph size: 196800<br>
 Compression Ratio: 0.474363<br>
@@ -87,19 +86,19 @@ Neighbourhood query time in G_c (in seconds): 4.26167e-06
 `./exec_CoCooN_SP.sh dataset_name edge_list.txt supernode_list.txt var`
 
 * input_file: the input graph file in .txt format.
-* var: I for CCN-I, E for CCN-E, and U for CCN-U.
+* var: I for CGS-I, E for CGS-E, and U for CGS-U.
 * Results will be will be stored in <em>SP_Results</em> folder as text file.
 
 Example:
 
 To run the algorithm:
 
-`./exec_CoCooN_SP.sh AP EL_I_0.5_AP.txt SN_I_0.5_AP.txt I`
+`./exec_CGS_SP.sh AP EL_I_0.5_AP.txt SN_I_0.5_AP.txt I`
 
 Output saved at SP_Results/AP.txt:
 
 <em>
-CoCooN Variant: I<br>
+CGS Variant: I<br>
 Original graph size (G): 414872<br>
 Compressed graph size (G_c): 196800<br>
 Compression Ratio: 0.474363<br>
@@ -119,21 +118,21 @@ Shortest path query time on globally decompressed G_c (in seconds): 0.0016715
 
 <li><strong>Running Reachability Query:</strong>
 
-`./exec_CoCooN_RQ.sh dataset_name edge_list.txt supernode_list.txt var`
+`./exec_CGS_RQ.sh dataset_name edge_list.txt supernode_list.txt var`
 
 * input_file: the input graph file in .txt format.
-* var: I for CCN-I, E for CCN-E, and U for CCN-U.
+* var: I for CGS-I, E for CGS-E, and U for CGS-U.
 * Results will be will be stored in <em>RQ_Results</em> folder as text file.
 
 Example:
 
 To run the algorithm:
 
-`./exec_CoCooN_RQ.sh AP EL_I_0.5_AP.txt SN_I_0.5_AP.txt I`
+`./exec_CGS_RQ.sh AP EL_I_0.5_AP.txt SN_I_0.5_AP.txt I`
 
 Output saved at RQ_Results/AP.txt:
 
-<em>CoCooN Variant: I<br>
+<em>CGS Variant: I<br>
 Original graph size (G): 414872<br>
 Compressed graph size (G_c): 196800<br>
 Compression Ratio: 0.474363<br>
