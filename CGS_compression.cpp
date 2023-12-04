@@ -944,7 +944,7 @@ void OutputController::print_analysis() {
   std::ofstream out(filename, ios::app);
   std::streambuf *coutbuf = std::cout.rdbuf(); //save old buf
   std::cout.rdbuf(out.rdbuf()); //redirect std::cout to out.txt!
-  cout <<"Dataset: " << dataset << "\nAlgorithm: " << algo << "\nThreshold: " << tol;
+  cout <<"Dataset: " << dataset << "\nCGS Variant: " << algo << "\nThreshold: " << tol;
   compression();
   compression_times();
   cout << "\n\n";
