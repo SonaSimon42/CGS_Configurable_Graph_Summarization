@@ -573,6 +573,7 @@ void OutputController::print_analysis() {
   std::ofstream out(filename, ios::app);
   std::streambuf *coutbuf = std::cout.rdbuf(); //save old buf
   std::cout.rdbuf(out.rdbuf()); //redirect std::cout to out.txt!
+  cout <<"Dataset: " << dataset << "\nCGS Variant: " << algo;
   G_.get_parent();
   shortest_path_query(100000); // computes shortest path query for 100000 node pairs
   spath_times();
